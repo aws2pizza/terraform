@@ -1,0 +1,8 @@
+variable "NetworkAccessList" {
+  type = list(object({
+    tags = list(string)
+  }))
+}
+
+variable "vpc_id" { type = string }
+variable "subnet_ids" { type = list(string) }
